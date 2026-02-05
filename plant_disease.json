@@ -1,0 +1,197 @@
+[
+  {
+    "name": "Apple___Apple_scab",
+    "cause": "Fungus Venturia inaequalis. Favorable conditions are cool, wet weather.",
+    "cure": "Vermicompost, Neem cake, Seaweed extract (organic)"
+  },
+  {
+    "name": "Apple___Black_rot",
+    "cause": "Caused by the fungus Botryosphaeria obtusa.",
+    "cure": "Vermicompost, Bone meal, Organic micronutrient mix"
+  },
+  {
+    "name": "Apple___Cedar_apple_rust",
+    "cause": "Fungus Gymnosporangium juniperi-virginianae.",
+    "cure": "Vermicompost, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Apple___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Compost tea, Seaweed extract"
+  },
+  {
+    "name": "Background_without_leaves",
+    "cause": "No disease or plant detected.",
+    "cure": "Not applicable"
+  },
+  {
+    "name": "Blueberry___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic acidifier (pine bark), Seaweed extract"
+  },
+  {
+    "name": "Cherry___Powdery_mildew",
+    "cause": "Fungus Podosphaera clandestina.",
+    "cure": "Compost tea, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Cherry___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic micronutrient mix"
+  },
+  {
+    "name": "Corn___Cercospora_leaf_spot Gray_leaf_spot",
+    "cause": "Fungus Cercospora zeae-maydis.",
+    "cure": "Vermicompost, Neem cake, Compost tea"
+  },
+  {
+    "name": "Corn___Common_rust",
+    "cause": "Fungus Puccinia sorghi.",
+    "cure": "Vermicompost, Seaweed extract"
+  },
+  {
+    "name": "Corn___Northern_Leaf_Blight",
+    "cause": "Fungus Exserohilum turcicum.",
+    "cure": "Vermicompost, Neem cake, Compost tea"
+  },
+  {
+    "name": "Corn___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Grape___Black_rot",
+    "cause": "Fungus Guignardia bidwellii.",
+    "cure": "Vermicompost, Seaweed extract, Neem cake"
+  },
+  {
+    "name": "Grape___Esca_(Black_Measles)",
+    "cause": "Fungal complex including Phaeomoniella chlamydospora.",
+    "cure": "Vermicompost, Organic compost, Seaweed extract"
+  },
+  {
+    "name": "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)",
+    "cause": "Fungus Pseudocercospora vitis.",
+    "cure": "Vermicompost, Neem cake, Compost tea"
+  },
+  {
+    "name": "Grape___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic micronutrient mix"
+  },
+  {
+    "name": "Orange___Haunglongbing_(Citrus_greening)",
+    "cause": "Bacterium spread by psyllid insects.",
+    "cure": "Compost tea, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Peach___Bacterial_spot",
+    "cause": "Bacterium Xanthomonas campestris pv. pruni.",
+    "cure": "Vermicompost, Neem cake, Compost tea"
+  },
+  {
+    "name": "Peach___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Pepper,_bell___Bacterial_spot",
+    "cause": "Bacterium Xanthomonas campestris pv. vesicatoria.",
+    "cure": "Vermicompost, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Pepper,_bell___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Potato___Early_blight",
+    "cause": "Fungus Alternaria solani.",
+    "cure": "Compost tea, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Potato___Late_blight",
+    "cause": "Pathogen Phytophthora infestans.",
+    "cure": "Vermicompost, Organic compost, Seaweed extract"
+  },
+  {
+    "name": "Potato___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Raspberry___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Compost tea"
+  },
+  {
+    "name": "Soybean___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Squash___Powdery_mildew",
+    "cause": "Fungal pathogens including Erysiphe cichoracearum.",
+    "cure": "Seaweed extract, Neem cake, Compost tea"
+  },
+  {
+    "name": "Strawberry___Leaf_scorch",
+    "cause": "Fungus Diplocarpon earlianum.",
+    "cure": "Vermicompost, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Strawberry___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  },
+  {
+    "name": "Tomato___Bacterial_spot",
+    "cause": "Bacterium Xanthomonas spp.",
+    "cure": "Vermicompost, Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Tomato___Early_blight",
+    "cause": "Fungus Alternaria solani.",
+    "cure": "Compost tea, Neem cake"
+  },
+  {
+    "name": "Tomato___Late_blight",
+    "cause": "Pathogen Phytophthora infestans.",
+    "cure": "Vermicompost, Seaweed extract"
+  },
+  {
+    "name": "Tomato___Leaf_Mold",
+    "cause": "Fungus Passalora fulva.",
+    "cure": "Neem cake, Seaweed extract"
+  },
+  {
+    "name": "Tomato___Septoria_leaf_spot",
+    "cause": "Fungus Septoria lycopersici.",
+    "cure": "Vermicompost, Neem cake, Compost tea"
+  },
+  {
+    "name": "Tomato___Spider_mites Two-spotted_spider_mite",
+    "cause": "Spider mites Tetranychus urticae.",
+    "cure": "Neem oil spray, Vermicompost"
+  },
+  {
+    "name": "Tomato___Target_Spot",
+    "cause": "Fungus Corynespora cassiicola.",
+    "cure": "Compost tea, Seaweed extract"
+  },
+  {
+    "name": "Tomato___Tomato_Yellow_Leaf_Curl_Virus",
+    "cause": "Virus spread by whiteflies.",
+    "cure": "Neem oil spray, Vermicompost"
+  },
+  {
+    "name": "Tomato___Tomato_mosaic_virus",
+    "cause": "Virus transmitted through contact and contaminated tools.",
+    "cure": "Sanitize tools + Vermicompost"
+  },
+  {
+    "name": "Tomato___healthy",
+    "cause": "No disease present.",
+    "cure": "Vermicompost, Organic compost"
+  }
+]

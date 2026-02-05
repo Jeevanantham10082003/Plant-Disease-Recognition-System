@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>🌿 Plant Disease Recognition</title>
+
+  <link rel="stylesheet" href="../static/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../static/css/style.css" />
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <span class="navbar-brand" data-i18n="title">Plant Disease Recognition</span>
+
+    <div class="ms-auto">
+      <button class="btn btn-outline-light btn-sm me-2" onclick="setLang('en')">
+        English
+      </button>
+      <button class="btn btn-outline-light btn-sm" onclick="setLang('ta')">
+        தமிழ்
+      </button>
+    </div>
+  </div>
+</nav>
+
+<div class="carousel-item active">
+  <div class="carousel-text-wrapper">
+
+    <h1 class="carousel-text-title" data-i18n="title">
+      Plant Disease Recognition
+    </h1>
+
+    <form action="/upload/" method="POST" enctype="multipart/form-data">
+      <h3 data-i18n="uploadTitle">Upload Image</h3>
+
+      <input type="file" name="img" required>
+      <br><br>
+
+      <button type="submit" class="btn btn-success" data-i18n="uploadBtn">
+        Upload
+      </button>
+    </form>
+
+    {% if result %}
+    <div class="result-box">
+
+      <img src="{{ imagepath }}" class="result-image">
+
+      <div class="result-text">
+        <h3 id="pred-name" data-key="{{ prediction_key }}">
+          {{ prediction['name'] }}
+        </h3>
+
+        <p id="pred-cause">{{ prediction['cause'] }}</p>
+
+        <h4 data-i18n="actionTitle">Action to reduce Disease</h4>
+
+        <p id="pred-cure">{{ prediction['cure'] }}</p>
+      </div>
+    </div>
+    {% endif %}
+
+  </div>
+</div>
+
+<script src="../static/js/bootstrap.bundle.min.js"></script>
+
+<script>
+let uiTranslations = {};
+let predTranslations = {};
+
+async function setLang(lang) {
+  localStorage.setItem("lang", lang);
+
+  const uiRes = await fetch(`/static/lang/${lang}.json`);
+  uiTranslations = await uiRes.json();
+
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.dataset.i18n;
+    if (uiTranslations[key]) el.innerText = uiTranslations[key];
+  });
+
+  if (lang !== "en") {
+    const predRes = await fetch(`/static/lang/predictions/${lang}.json`);
+    predTranslations = await predRes.json();
+    translatePrediction();
+  }
+}
+
+function translatePrediction() {
+  const nameEl = document.getElementById("pred-name");
+  if (!nameEl) return;
+
+  const key = nameEl.dataset.key;
+
+  document.getElementById("pred-name").innerText =
+    predTranslations[key]?.name || nameEl.innerText;
+
+  document.getElementById("pred-cause").innerText =
+    predTranslations[key]?.cause || document.getElementById("pred-cause").innerText;
+
+  document.getElementById("pred-cure").innerText =
+    predTranslations[key]?.cure || document.getElementById("pred-cure").innerText;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  const savedLang = localStorage.getItem("lang") || "en";
+  setLang(savedLang);
+});
+</script>
+
+</body>
+</html>
